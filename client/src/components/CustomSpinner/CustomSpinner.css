@@ -1,0 +1,53 @@
+.custom-loader {
+  background-image: url("./spinner.gif");
+  width: 100px;
+  background-position: center;
+  height: 70px;
+  animation: spin 0.9s linear infinite;
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 1000000;
+  opacity: 1 !important;
+}
+
+.loader {
+  width: 100%;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 100000;
+  position: absolute;
+}
+
+.loader-background {
+  background-color: white;
+  margin-left: 50%;
+  margin-right: 50%;
+  width: 100px;
+  height: 100px;
+  padding-top: 14px;
+  border-radius: 10px;
+  bottom: 50%;
+  transform: translate(-50%, -51%);
+  position: absolute;
+  top: 50%
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

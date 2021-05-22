@@ -1,0 +1,56 @@
+
+#display{
+   margin: 0;
+   height: calc(100vh - 1px);
+   background: lightblue;
+   /* display: flex;
+   justify-content: center;
+   align-items: center; */
+}
+
+#display .users-content{
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+}
+
+#display .header-title{
+    display: flex;
+    justify-content: space-around;
+    font-size: 20px;
+    line-height: 22px;
+    font: 900;
+    font-family: Roboto;
+    color: #000;
+}
+
+#display .user-details-table{
+    margin-top: 32px;
+    height: calc(100vh - 200px);
+    overflow-y: scroll;
+}
+
+#display .edit-user-detail{
+    margin-top: 32px;
+    /* width: calc(100vw - 500px); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* text-align: center; */
+}
+
+#display .error{
+    color: red !important;
+    margin-top: -10px;
+}
+.form-group{
+    width: calc(100vw - 800px);
+}
+thead {
+    position: sticky;
+    top: 1px;
+    /* background-color: #fff; */
+  }
+  .text-muted{
+      margin-top: -12px !important;
+  }

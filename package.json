@@ -5,7 +5,9 @@
   "main": "server.js",
   "scripts": {
     "start": "node server",
-    "server":"nodemon server"
+    "server": "nodemon server",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run client\" \"npm run server\""
   },
   "repository": {
     "type": "git",
@@ -21,7 +23,11 @@
     "config": "^3.3.6",
     "express": "^4.17.1",
     "express-validator": "^6.11.1",
+    "fast-csv": "^4.3.6",
+    "fs": "*",
+    "json2csv": "^5.0.6",
     "mongoose": "^5.12.10",
+    "path": "^0.12.7",
     "request": "^2.88.2"
   },
   "devDependencies": {

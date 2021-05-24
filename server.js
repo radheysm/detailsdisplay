@@ -7,10 +7,8 @@ const app = express();
 
 connectDB();
 
-// Init Middleware
 
 app.use(express.json({extended:false}));
-// app.use('/static', express.static(__dirname + "/public"))
 app.use('/api/users',require('./routes/api/users'))
 
 if(process.env.NODE_ENV === 'production'){

@@ -1,3 +1,3 @@
 {
-    "mongoURI":"mongodb+srv://radhey:radhey@123@userdetails.koehb.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
+    "mongoURI":""
 }

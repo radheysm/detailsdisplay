@@ -51,6 +51,7 @@ router.put('/', (req, res)=>{
             email,
             name,
             gender,
+            status,
             created_at,
             updated_at
         };
